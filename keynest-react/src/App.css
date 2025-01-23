@@ -1,0 +1,82 @@
+/* src/styles/App.css */
+
+/* Reset styles for consistent cross-browser rendering */
+body, h1, h2, h3, p, ul, li, a, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--font-clr, #333); /* Fallback to #333 if variable not defined */
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+/* Global container for consistent page spacing */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: var(--footer-bg, #222); /* Fallback to dark gray */
+  color: var(--font-clr, #e2e2e2);
+  padding: 1rem;
+}
+
+/* Navigation links */
+header nav a {
+  color: var(--main-clr, #DB2777); /* Fallback to a pinkish color */
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Cards styling */
+.card-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* Accordion styling adjustments */
+.accordion-about-body {
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-about-header {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: var(--main-clr, #DB2777);
+  color: #fff;
+}
+
+/* Footer alignment */
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  header nav ul {
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
